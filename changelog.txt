@@ -1,0 +1,194 @@
+== 2.2.5 ==
+Release date: July 8, 2021
+* Enhancement: WooCommerce - Added support for On Hold order status
+* Fix: Freemius - Invalid authorization header error on connecting API
+
+== 2.2.4 ==
+Release date: April 20, 2021
+* Fix: REST API permission callback notice
+
+== 2.2.3 ==
+Release date: February 17, 2021
+* Fix: WooCommerce - Showing dot when there is no last name in billing
+* Fix: Custom Form - Showing duplicate notifications
+* Fix: Custom Form - Gravatar image was loading by default
+
+== 2.2.2 ==
+Release date: November 24, 2020
+* Fix: Notification - PHP error due to timezone issue with some servers
+* Fix: Notification - Error in other conversions due to empty user role field in User Registration
+* Fix: WooCommerce - Time was not getting updated using ibx_wpfomo_time_array filter
+
+== 2.2.1 ==
+Release date: September 25, 2020
+* Enhancement: Added an option to edit saved time in custom entries log
+* Fix: Upcoming date CSV entries notifications were getting displayed
+
+== 2.2.0 ==
+Release date: September 22, 2020
+* New: User Registration notification
+* Fix: Notifications - Not showing due to invalid UTF8 characters encoding
+* Fix: Notification Bar - Returning visitors condition was not working
+* Fix: Core - Minor JS issue
+* Development - Added filter ibx_wpfomo_time_array to translate or change the order of time
+
+== 2.1.1.2 ==
+Release date: May 15, 2020
+* Enhancement: Added time field for custom conversions
+* Fix: Special characters encoding issue in notifications
+* Fix: Double quotes in notification template title field was not getting displayed after save
+* Fix: Custom Reviews - Multiple reviews were not getting saved
+* Fix: Notification Bar - Issue with Astra theme
+
+== 2.1.1.1 ==
+Release date: April 13, 2020
+* Fix: Freemius - Notification content was not loading if Freemius data contains invalid characters
+* Fix: Notification Bar - Not visible sometimes
+* Fix: Notification Bar - Bottom positioned bar was not getting closed
+* Fix: Notification Bar - Hide on Mobile option was not working
+* Fix: Notification Bar - Content overlapping issue on responsive devices
+* Fix: Notification - "Someone" text was not being shown if name field contains a blank space only
+* Fix: Notification - Time ago HTML was being rendered as plain text
+* Fix: Memory limit issue
+
+== 2.1.1 ==
+Release date: December 30, 2019
+* Enhancement: Notification Bar - Added Fixed Countdown option
+* Enhancement: Notification Bar - Added link target option for button
+* Enhancement: Notification Bar - Added option to change expire text
+* Fix: Notification Bar - Countdown digits were being hidden when time expires
+* Fix: Floating Button - Rendering page content
+* Fix: Floating Button - Shortcodes were not working after recent update
+* Fix: Freemius - Initial letter of last name will now be visible instead of full name
+* Fix: Freemius - Added missing setting for disabling product image in notification
+* Fix: Freemius - API connection issue
+
+== 2.1.0 ==
+Release date: November 28, 2019
+* New: WordPress integration (plugin and theme active installs, downloads, plugin reviews)
+* New: Envato integration
+* New: Google Reviews integration
+* Enhancement: Added support for GravityForms PARTIAL ENTRY Addon
+* Enhancement: Added conversion analytics for EDD and WooCommerce
+* Enhancement: Added typography toolbar for notification template field
+* Enhancement: Added Image Size option
+* Enhancement: Added Box Vertical and Horizontal padding options
+* Enhancement: Added form title in DB entry for Custom Form URL
+* Enhancement: Improved preview
+* Enhancement: Improved notification layout
+* Fix: Product image was not showing for excluded emails
+* Fix: Close button alignment issue in notification bar
+* Fix: Minor JS and CSS issues
+
+== 2.0.1.5 ==
+Release date: September 3, 2019
+* Enhancement: LearnDash - Added logic to show notifications for all courses instead of only active ones
+* Enhancement: Core - Added option to enable or disable user image from Gravatar
+* Fix: Freemius - Issue with limited Geolocation API calls
+* Fix: Gravity Forms - Incorrect time calculation issue
+* Fix: Core - Exclude emails in settings options
+
+== 2.0.1.4 ==
+Release date: May 23, 2019
+* Enhancement: Added logic to discard "ago" text after time value by entering hyphen "-" in "ago" translation field in setting
+* Enhancement: Freemius - Added new plan field and added preview for it
+* Fix: Gravity Forms - Display label for checkbox and radio fields instead of their value
+* Fix: Freemius - PHP warning
+* Fix: Custom Form - PHP class conflict with Ultimate Recipe plugin
+* Fix: Core - CSV import fields were showing for other types
+* Fix: Core - Floating button overlapping issue on preview panel
+
+== 2.0.1.3 ==
+Release date: April 1, 2019
+* Fix: Location rules were not working properly for URL based targets
+
+== 2.0.1.2 ==
+Release date: March 29, 2019
+* Enhancement: EDD - Added logic to fetch location by customer's IP address
+* Enhancement: Freemius - Added logic to fetch location by customer's IP address
+* Fix: Freemius - Show notifications for all products if none of them is selected
+* Fix: Prevented multiple trigger of notification due to window load event fired by other scripts improperly
+
+== 2.0.1.1 ==
+Release date: March 22, 2019
+* Enhancement: Custom Form URL - Added link field
+* Fix: WooCommerce - Custom URL field was showing in other conversation source
+* Fix: Freemius - Removed draft/in_active products from the list
+* Fix: Analytics - Random count was not working
+* Fix: Core - loader icon was showing all time
+* Development: Freemius - Added hook 'ibx_wpfomo_freemius_get_purchases_conversions' to filter conversion data
+
+== 2.0.1 ==
+Release date: March 13, 2019
+* New: Added Custom Form URL feature
+* New: Added CSV import feature for custom conversions
+* New: Added Freemius conversion feature
+* New: Added WooCommerce Reviews feature
+* New: Added Page Analytics feature
+* New: Added Conversion Analytics feature
+* Enhancement: WooCommerce conversion - Added option to select multiple products
+* Enhancement: Real-time preview
+* Enhancement: Updated preview interface
+
+== 2.0 ==
+Release date: November 22, 2018
+* New: Revamped UI (introducing 4 easy steps to build a template)
+* Enhancement: No need to install separate add-on for WooCommerce, EDD, Give, Gravity Forms, LearnDash, and LifterLMS
+* Enhancement: Auto select conversion source based on installed plugin
+* Enhancement: Added 2 notification styles
+* Enhancement: Added an option to show conversion from only given days
+* Enhancement: Added an option to translate "Someone" and "ago" text in settings
+* Enhancement: Added an option to exclude some user emails to hide identity in settings
+* Enhancement: Improved nofication template field
+* Enhancement: One-click to add variables in notification template
+* Enhancement: Added default settings for timing, behaviour, and design
+* Enhancement: Added font size options for notification first row and second row
+* Enhancement: Added separate meta box for Tracking fields
+* Enhancement: Template variables now support parameters
+* Enhancement: Added sub-fields support in Gravity Forms notification
+* Fix: Visibility targeting rules were not working properly
+* Fix: Timing issue with notification on page reload
+* Fix: Empty notification issue
+* Fix: LifterLMS - incorrect time issue
+
+== 1.2.1 ==
+Release date: April 11, 2018
+* Fix: Notification large image size issue in IE
+* Fix: Notifications were being displayed even clicking on the close button
+
+== 1.2 ==
+Release date: February 14, 2018
+* New: Gravity Forms add-on
+* Enhancement: Added filter attribute support in notification template merge tags
+* Enhancement: Added cache duration option in settings for add-ons
+* Fix: Notification sequence issue
+* Fix: Notifications were not appearing when there are only 1 or 2 notifications with loop is off
+* Fix: Time was not showing in notification preview box in admin
+* Fix: WPfomify post type was appearing in nav menus
+* Development: Introduced a base class for third party add-on
+* Development: Added hook ibx_wpfomo_save_post, will trigger on post update
+* Development: Improved notification template merge tag logic, it will now support custom tags
+
+== 1.1.1 ==
+Release date: November 28, 2017
+* Enhancement: Changed Fomo Bar to Notification Bar
+* Enhancement: Added top and bottom position option for Notification Bar
+* Enhancement: Added bottom left and right position option for Floating Button
+* Fix: Notification sequence was showing last notification instead of next on each page load
+
+== 1.1 ==
+Release date: September 27, 2017
+* New: Added API logic
+* New: A separate admin page for add-ons quick view and installation
+* Enhancement: Updated fomo bar style and added call-to-action button options
+* Fix: Floating Button was not showing close icon when popup is set to always visible
+* Fix: Floating Button popup size in responsive mode
+* Fix: Hide on Mobile, Hide on Desktop options were not working for Floating Button
+* Fix: Shadow style for fomo bar
+* Fix: Shadow style for notification preview
+* Fix: Notification image was not rendering properly in Safari
+
+== 1.0.1 ==
+Release date: September 12, 2017
+* Fix: Height issue of notifications
+* Fix: Height issue of floating button popup content

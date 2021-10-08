@@ -1,0 +1,152 @@
+.wrap,
+.wrap * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ibx-wpfomo-addons:before,
+.ibx-wpfomo-addons:after {
+    content: " ";
+    display: table;
+}
+.ibx-wpfomo-addons:after {
+    clear: both;
+}
+
+.ibx-wpfomo-addons {
+    margin-top: 25px;
+}
+
+.ibx-wpfomo-addon {
+    width: calc((100% - 80px) / 4);
+    float: left;
+    background: #fff;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    position: relative;
+}
+.ibx-wpfomo-addon:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.ibx-wpfomo-addon .ibx-wpfomo-addon-content,
+.ibx-wpfomo-addon .ibx-wpfomo-addon-footer {
+    padding: 10px 20px;
+}
+
+.ibx-wpfomo-addon .ibx-wpfomo-addon-footer {
+    background: #f7f7f7;
+    border-top: 1px solid #f1f1f1;
+}
+
+.ibx-wpfomo-addon .ibx-wpfomo-addon-title {
+    display: none;
+}
+
+.ibx-wpfomo-addon .ibx-wpfomo-addon-image {
+    max-width: 100%;
+}
+
+.ibx-wpfomo-addon .spinner {
+    position: absolute;
+}
+
+.ibx-wpfomo-addon .ibx-wpfomo-addon-error {
+    position: absolute;
+    background: #ffe9e7;
+    color: #c30d00;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.ibx-wpfomo-addon .ibx-wpfomo-addon-error.activated {
+    opacity: 1;
+    visibility: visible;
+}
+.ibx-wpfomo-ftp-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    z-index: 99999999;
+}
+.ibx-wpfomo-ftp-popup .ibx-wpfomo-popup-inner {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    min-height: 50px;
+    width: 400px;
+    background: #fff;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.ibx-wpfomo-ftp-popup .ibx-wpfomo-popup-close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50px;
+    line-height: 22px;
+    border: 1px solid #fff;
+}
+.ibx-wpfomo-ftp-popup .ibx-wpfomo-popup-content {
+    padding: 20px;
+}
+.ibx-wpfomo-ftp-popup .ibx-wpfomo-popup-content .ibx-wpfomo-notice {
+    margin-top: 10px;
+}
+.ibx-wpfomo-ftp-popup .ibx-wpfomo-popup-content form .ftp-username {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ibx-wpfomo-ftp-popup .ibx-wpfomo-popup-content form input[type="text"],
+.ibx-wpfomo-ftp-popup .ibx-wpfomo-popup-content form input[type="password"] {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1500px) {
+    .ibx-wpfomo-addon {
+        width: calc((100% - 80px) / 3);
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .ibx-wpfomo-addon:nth-of-type(4n) {
+        margin-right: 30px;
+    }
+    .ibx-wpfomo-addon:nth-of-type(3n) {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ibx-wpfomo-addon {
+        width: calc((100% - 20px) / 2);
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .ibx-wpfomo-addon:nth-of-type(4n) {
+        margin-right: 20px;
+    }
+    .ibx-wpfomo-addon:nth-of-type(3n) {
+        margin-right: 20px;
+    }
+    .ibx-wpfomo-addon:nth-of-type(2n) {
+        margin-right: 0;
+    }
+}
